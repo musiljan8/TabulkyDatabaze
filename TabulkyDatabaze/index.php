@@ -9,7 +9,8 @@
     </head>
 
 
-<H1>Stranka Index</H1>
+<H1>Pripojeni k databazi - Moje Databaze</H1>
+
 
 
 <?php
@@ -21,7 +22,7 @@ Db::query('
         VALUES ("vaclav.musilova@gmail.com", "Jana",  "Musilova")
         
 ');
-echo('OK');
+echo('zapsano');
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
