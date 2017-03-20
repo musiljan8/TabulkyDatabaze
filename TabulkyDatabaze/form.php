@@ -26,6 +26,20 @@
 
                         echo('<p>Byl jste zaregistrován.</p>');
                 }
+                 if(isset($_GET["email"]) && isset($_GET["jmeno"]) && isset($_GET["prijmeni"])) {
+        $email = $_GET["email"];             
+        $jmeno = $_GET["jmeno"];
+        $prijmeni = $_GET["prijmeni"];
+        
+        echo $_GET["email"] . ","; 
+        echo $_GET["jmeno"] . ",";
+        echo $_GET["prijmeni"] . "!";
+
+        $soubor = fopen("form_sent.php", "a+");
+        fwrite ($soubor,$email ."". $jmeno ." ". $prijmeni . "\n");
+        fclose($soubor);
+      
+                }
                 ?>
 
 <form method="GET"> 
