@@ -28,7 +28,7 @@
                 }
                 ?>
 
-<form method="GET"; action="form_sent.php" >
+<form method="GET"> 
                         Email:<br />
                         <input type="text" name="email" /><br />
                         Jmeno:<br />
