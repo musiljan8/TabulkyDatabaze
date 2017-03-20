@@ -1,5 +1,5 @@
 
-  
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,23 +9,25 @@
     </head>
 
 
-<H1>Pripojeni k databazi - Moje Databaze</H1>
+    <H1>Registrace uzivatele</H1>
 
 
 
-<?php
+    <?php
 // Načtení wrapperu
-require_once('Db.php');
-Db::connect('127.0.0.1', 'moje_databaze', 'root', '');
-Db::query('
-        INSERT INTO uzivatele (email, jmeno, prijmeni)
-        VALUES ("vaclav.musilova@gmail.com", "Jana",  "Musilova")
-        
-');
-echo('zapsano');
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-?>
+//    require_once('Db.php');
+ //   Db::connect('127.0.0.1', 'moje_databaze', 'root', '');
+ //   Db::query('
+ //      INSERT INTO uzivatele (email, jmeno, prijmeni)
+ //       VALUES (?, ?, ?)')
+
+
+
+    echo('zapsano');
+    /*
+     * To change this license header, choose License Headers in Project Properties.
+     * To change this template file, choose Tools | Templates
+     * and open the template in the editor.
+     */
+    ?>
+ 
