@@ -31,15 +31,27 @@
         $jmeno = $_GET["jmeno"];
         $prijmeni = $_GET["prijmeni"];
         
-        echo $_GET["email"] . ","; 
-        echo $_GET["jmeno"] . ",";
-        echo $_GET["prijmeni"] . "!";
+       
 
         $soubor = fopen("form_sent.php", "a+");
         fwrite ($soubor,$email ."". $jmeno ." ". $prijmeni . "\n");
         fclose($soubor);
       
                 }
+        $uzivatele = Db::queryAll('
+        SELECT *
+        FROM uzivatele
+');
+echo('<h2>Uživatelé</h2><table border="1">');
+foreach ($uzivatele as $u)
+{
+        echo('<tr><td>' . htmlspecialchars($u['email']));
+        echo('</td><td>' . htmlspecialchars($u['jmeno']));      
+          echo('</td><td>' . htmlspecialchars($u['prijmeni'])); 
+       
+        echo('</td></tr>');
+}
+echo('</table>');        
                 ?>
 
 <form method="GET"> 
