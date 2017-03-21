@@ -12,49 +12,9 @@
 
 
 
-              <?php
+ 
 
-                require_once('Db.php');
-                Db::connect('127.0.0.1', 'moje_databaze', 'root', '');
-                if ($_GET)
-                {
-                        
-                        Db::query('
-                                INSERT INTO uzivatele (email, jmeno, prijmeni)
-                                VALUES (?, ?, ?)
-                        ', $_GET['email'], $_GET['jmeno'],$_GET['prijmeni'] );
-
-                        echo('<p>Byl jste zaregistrován.</p>');
-                }
-                 if(isset($_GET["email"]) && isset($_GET["jmeno"]) && isset($_GET["prijmeni"])) {
-        $email = $_GET["email"];             
-        $jmeno = $_GET["jmeno"];
-        $prijmeni = $_GET["prijmeni"];
-        
-       
-
-        $soubor = fopen("form_sent.php", "a+");
-        fwrite ($soubor,$email ."". $jmeno ." ". $prijmeni . "\n");
-        fclose($soubor);
-      
-                }
-        $uzivatele = Db::queryAll('
-        SELECT *
-        FROM uzivatele
-');
-echo('<h2>Uživatelé</h2><table border="1">');
-foreach ($uzivatele as $u)
-{
-        echo('<tr><td>' . htmlspecialchars($u['email']));
-        echo('</td><td>' . htmlspecialchars($u['jmeno']));      
-          echo('</td><td>' . htmlspecialchars($u['prijmeni'])); 
-       
-        echo('</td></tr>');
-}
-echo('</table>');        
-                ?>
-
-<form method="GET"> 
+<form method="GET" action="form_sent.php"> 
                         Email:<br />
                         <input type="text" name="email" /><br />
                         Jmeno:<br />
