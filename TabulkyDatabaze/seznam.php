@@ -16,7 +16,7 @@
        <?php      
                  
         
-    if(isset($_GET["email"]) && isset($_GET["jmeno"]) && isset($_GET["prijmeni"])) {
+if(isset($_GET["email"]) && isset($_GET["jmeno"]) && isset($_GET["prijmeni"])) {
         $email = $_GET["email"];             
         $jmeno = $_GET["jmeno"];
         $prijmeni = $_GET["prijmeni"];
@@ -30,7 +30,7 @@
     echo('<h2>Uživatelé</h2><table border="1">');
     foreach ($uzivatele as $u)
 {
-        echo('<tr><td>' . htmlspecialchars($u['email']));
+        echo('<tr><td>' . htmlspecialchars($u['email'])); 
         echo('</td><td>' . htmlspecialchars($u['jmeno']));      
         echo('</td><td>' . htmlspecialchars($u['prijmeni'])); 
        
