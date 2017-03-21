@@ -15,7 +15,7 @@
  
 
 <form method="GET" action="form_sent.php"> 
-                        Email:<br />
+                        email:<br />
                         <input type="text" name="email" /><br />
                         Jmeno:<br />
                         <input type="text" name="jmeno" /><br />
