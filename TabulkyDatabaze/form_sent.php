@@ -13,6 +13,8 @@
      ', $_GET['email'], $_GET['jmeno'],$_GET['prijmeni'] );
 
         echo('<p>Byl jste zaregistrován.</p>');
+        
+        
     }
      
 ?>
