@@ -24,11 +24,7 @@
  
 Dusan Drak
 pepa@pepa.czPepa Nos
-pepa@pepa.czPepa Nos
-pepa@pepa.czPepa Nos
-pepa@pepa.czPepa Nos
 john@johnJonh Lennon
-
 john@johnJonh Lennon
 alois@alois.czAlois Slama
 alois@alois.czAlois Slama
