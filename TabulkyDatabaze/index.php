@@ -26,7 +26,7 @@
       echo('<h2>Uzivatele</h2><table>');
     foreach ($uzivatele as $u)
 {
-        echo('</td><td>' . htmlspecialchars($u['email']));
+        echo('<tr><td>' . htmlspecialchars($u['email']));
         echo('</td><td>' . htmlspecialchars($u['jmeno']));
         echo('</td><td>' . htmlspecialchars($u['prijmeni']));
        
