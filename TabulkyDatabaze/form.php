@@ -10,15 +10,14 @@
 
 <H1>Registrace uzivatele</H1>
 
+<?php
 
-
- 
+       
+ ?>
 
 <form method="GET" action="form_sent.php"> 
                         email:<br />
-                        <input type="text" name="email" /><br />
-                        Heslo:<br />
-                        <input type="text" name="heslo" /><br />
+                        <input type="text" name="email" /><br />                        
                         Jmeno:<br />
                         <input type="text" name="jmeno" /><br />
                         Prijmeni:<br />

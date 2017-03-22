@@ -13,24 +13,16 @@
      ', $_GET['email'], $_GET['jmeno'],$_GET['prijmeni'] );
 
         echo('<p>Byl jste zaregistrován.</p>');
-        echo $_GET["email"];  $_GET["jmeno"];  $_GET["prijmeni"];
-    }   
-               
-        
+        echo ($_GET["email"]);    
+        echo($_GET["jmeno"]);
+        echo($_GET["prijmeni"]);   
+    }    
     
      
 ?>
 
  
-Dusan Drak
-pepa@pepa.czPepa Nos
-john@johnJonh Lennon
-john@johnJonh Lennon
-alois@alois.czAlois Slama
-alois@alois.czAlois Slama
-petr@pavel.czPetr  Pavel
-kuba@kuba.czKuba Kubikula
-petr@pavel.czPetr  Pavel
-petr@pavel.czPetr  Pavel
-Pavel@pavel.czPavel Kos
+
+ 
+ 
  
