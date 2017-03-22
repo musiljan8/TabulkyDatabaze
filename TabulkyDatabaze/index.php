@@ -26,14 +26,14 @@
       echo('<h2>Uzivatele</h2><table>');
     foreach ($uzivatele as $u)
 {
-        echo('<tr><td>' . htmlspecialchars($u['email']));
-        echo('</td><td>' . htmlspecialchars($u['jmeno']));
-        echo('</td><td>' . htmlspecialchars($u['prijmeni']));
+        echo('<tr><td>' . htmlspecialchars($u['email']) . ',' . '');
+        echo( htmlspecialchars($u['jmeno']) . ',' . '    ');
+        echo( htmlspecialchars($u['prijmeni']));
        
-        echo('</td></tr>');
+        
 }
    
-echo('</table>');
+
 
 
    

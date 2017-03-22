@@ -17,6 +17,8 @@
 <form method="GET" action="form_sent.php"> 
                         email:<br />
                         <input type="text" name="email" /><br />
+                        Heslo:<br />
+                        <input type="text" name="heslo" /><br />
                         Jmeno:<br />
                         <input type="text" name="jmeno" /><br />
                         Prijmeni:<br />
