@@ -1,21 +1,14 @@
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>Tabulky Databaze</title>
-        <link rel="stylesheet" type="text/css" href="styly/styl.css"
+        <link rel="stylesheet" type="text/css" href="styly/styl.css">
     </head>
+        </body> 
+            <h1>Registrace uzivatele</h1>
 
-
-<H1>Registrace uzivatele</H1>
-
-<?php
-
-       
- ?>
-
-<form method="GET" action="form_sent.php"> 
+                <form method="GET" action="form_sent.php"> 
                         email:<br />
                         <input type="text" name="email" /><br />                        
                         Jmeno:<br />
