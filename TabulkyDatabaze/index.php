@@ -2,10 +2,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Jan Musil Tabulky Databaze</title>
+        <title>Index</title>
         <link rel="stylesheet" type="text/css" href="styly/styl.css">
     </head>
         <body>
+            <h1>Index</h1>
         <h2>Pripojeni k databazi</h2>
         <p>zobrazeni dat z tabulky uzivatele</p>
         </body>
