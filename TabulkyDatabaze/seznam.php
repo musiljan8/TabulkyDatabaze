@@ -6,9 +6,8 @@
         <link rel="stylesheet" type="text/css" href="styly/styl.css"≥
     </head> 
         <body>
-            <h1>Seznam</h1>
+        <h1>Seznam</h1>
         </body>
-
 <?php         
     if(isset($_GET["email"]) && isset($_GET["jmeno"]) && isset($_GET["prijmeni"])) {
         $email = $_GET["email"];             
